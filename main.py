@@ -27,6 +27,19 @@ def main():
  ratings = [float(tag['data-value']) for tag in rating_tags]
 
 
+ n_movies = len(titles)
+ print(n_movies)
+
+ while(True):
+  index = random.randrange(0, n_movies)
+  print(f'{titles[index]} {years[index]}, rating: {ratings[index]:.1f}, starring: {actors_list[index]}')
+
+  user_input = input('do you want another movie (y/[n]) ?')
+
+  if user_input != 'y':
+   break
+
+
 
 
 if __name__ == '__main__':
