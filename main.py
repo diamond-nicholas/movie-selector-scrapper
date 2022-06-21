@@ -28,7 +28,7 @@ def main():
 
 
  n_movies = len(titles)
- print(n_movies)
+
 
  while(True):
   index = random.randrange(0, n_movies)
